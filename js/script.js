@@ -23,7 +23,7 @@ bind(info, users, '012345')('Alex@gmail.com');
 bind(info, users, '012345', 'Alex@gmail.com')();
 
 
-function bind2 (fn , ctx, ...rest) {
+function bind2 (fn, ctx, ...rest) {
     return function (...args) {
         const id = Date.now().toString()
 
